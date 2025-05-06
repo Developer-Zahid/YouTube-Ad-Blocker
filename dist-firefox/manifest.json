@@ -1,0 +1,31 @@
+{
+	"manifest_version": 3,
+	"name": "YouTube Ad Blocker",
+	"version": "1.0.0",
+	"description": "A simple, elegant ad blocker for YouTube",
+	"icons": {
+		"16": "public/images/ad-blocker-logo-16.png",
+		"48": "public/images/ad-blocker-logo-48.png",
+		"128": "public/images/ad-blocker-logo-128.png"
+	},
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "public/images/ad-blocker-logo-16.png",
+			"48": "public/images/ad-blocker-logo-48.png",
+			"128": "public/images/ad-blocker-logo-128.png"
+		}
+	},
+	"permissions": ["storage", "scripting"],
+	"host_permissions": ["*://*.youtube.com/*"],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		}
+	]
+}

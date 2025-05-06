@@ -15,18 +15,18 @@ A lightweight, elegant browser extension to block YouTube ads.
 
 ### Chrome Installation
 
-1. Download this extension folder
+1. Download this extension folder. `dist-chrome`
 2. Open Chrome and navigate to `chrome://extensions`
 3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the extension folder
+4. Click `Load unpacked` and select the extension folder. `dist-chrome`
 5. The extension is now installed and active
 
 ### Firefox Installation
 
-1. Download this extension folder
+1. Download this extension folder. `dist-firefox`
 2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
-3. Click "Load Temporary Add-on"
-4. Select any file from the extension folder. Like: `manifest.json`
+3. Click `Load Temporary Add-on`
+4. Select `manifest.json` file from the `dist-firefox` extension folder.
 5. The extension is now installed and active
 
 ## Usage
