@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Ad Blocker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="icon-container">
+          <div class="icon"></div>
+        </div>
+        <h1>YouTube Ad Blocker</h1>
+      </div>
+    </header>
+    
+    <main>
+      <div class="status-card">
+        <div class="status-info">
+          <h2>Ad Blocker Status</h2>
+          <p id="status-text">Active</p>
+        </div>
+        <div class="toggle-container">
+          <label class="toggle">
+            <input type="checkbox" id="adblock-toggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="stats-card">
+        <h2>Statistics</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-value" id="ads-blocked-today">0</span>
+            <span class="stat-label">Today</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="ads-blocked-total">0</span>
+            <span class="stat-label">Total</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="options-card">
+        <h2>Options</h2>
+        <div class="option-item">
+          <span>Block Video Ads</span>
+          <label class="toggle small">
+            <input type="checkbox" id="video-ads-toggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="option-item">
+          <span>Block Banner Ads</span>
+          <label class="toggle small">
+            <input type="checkbox" id="banner-ads-toggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Version 1.0.0</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
