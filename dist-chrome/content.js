@@ -199,7 +199,9 @@ function removeBannerAds() {
     '.ytd-merch-shelf-renderer',
     '#player-ads',
     '#panels',
-    '#masthead-ad'
+    '#masthead-ad',
+    'ytd-popup-container',
+    'tp-yt-iron-overlay-backdrop'
   ];
   
   for (const selector of bannerAdSelectors) {
